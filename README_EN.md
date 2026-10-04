@@ -31,8 +31,8 @@ osh. is not an anonymity VPN service and cannot guarantee third-party service av
 | Quick setup | Connection check |
 | :--: | :--: |
 | ![osh. quick setup](assets/screenshots/setup.png) | ![osh. connection check](assets/screenshots/check.png) |
-| **Settings** | **Home** |
-| ![osh. settings](assets/screenshots/settings.png) | ![osh. home screen](assets/screenshots/home.png) |
+| **Settings** | **Shared Smart Access** |
+| ![osh. settings](assets/screenshots/settings.png) | ![osh. shared Smart Access](assets/screenshots/services.png) |
 
 ## Highlights
 

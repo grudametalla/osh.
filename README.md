@@ -31,8 +31,8 @@ osh. не является VPN-сервисом анонимизации и не
 | Быстрая настройка | Проверка соединения |
 | :--: | :--: |
 | ![Быстрая настройка osh.](assets/screenshots/setup.png) | ![Проверка соединения osh.](assets/screenshots/check.png) |
-| **Настройки** | **Главная** |
-| ![Настройки osh.](assets/screenshots/settings.png) | ![Главный экран osh.](assets/screenshots/home.png) |
+| **Настройки** | **Smart Access** |
+| ![Настройки osh.](assets/screenshots/settings.png) | ![Совместный Smart Access osh.](assets/screenshots/services.png) |
 
 ## Основные возможности
 
