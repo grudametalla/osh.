@@ -1,81 +1,80 @@
-<h1 align="center">osh.</h1>
+<div align="center">
 
-<p align="center"><strong>Telegram, YouTube and Discord without babysitting routes and proxy profiles.</strong></p>
+# osh.
 
-<p align="center">
-  <a href="README.md">Русский</a> · <strong>English</strong>
-</p>
+### Telegram, YouTube and Discord on Android without babysitting routes and proxy settings.
 
-<p align="center">
-  <a href="https://github.com/grudametalla/osh./releases"><strong>Download</strong></a> ·
-  <a href="docs/FEATURES_EN.md">Features</a> ·
-  <a href="docs/INSTALL_EN.md">Installation</a> ·
-  <a href="docs/SECURITY_EN.md">Security</a> ·
-  <a href="docs/PRIVACY_EN.md">Privacy</a>
-</p>
+<img alt="Android 8+" src="https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
+<img alt="Public Beta" src="https://img.shields.io/badge/status-public%20beta-bdf58c?style=flat-square">
 
-> **Public Beta.** osh. is currently in public beta. Service availability depends on the Android version, carrier, network and restrictions currently applied to that network.
+<br><br>
 
-## What is osh.
+<a href="https://github.com/grudametalla/osh./releases"><strong>Download osh.</strong></a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="README.md">Русский</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="docs/INSTALL_EN.md">Installation</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="docs/FEATURES_EN.md">Features</a>
 
-osh. helps keep Telegram, YouTube and Discord reachable on Android.
+</div>
 
-- **Telegram** uses a local bridge running on the device.
-- **YouTube and Discord** use Smart Access: one Android VPN for selected applications with automatic route selection.
-- **Everything else** continues to use the normal Internet connection and is not routed through osh.
+---
 
-osh. is not an anonymity VPN service and cannot guarantee third-party service availability on every network.
+## One switch instead of manual routing
+
+osh. keeps the selected services reachable and handles connection routing automatically.
+
+| Telegram | YouTube | Discord |
+| :-- | :-- | :-- |
+| Local Telegram Bridge | Smart Access | Smart Access |
+| Independent from Android VPN | Automatic route selection | Automatic route selection |
+| Guided in-app setup | Can run together with Discord | Can run together with YouTube |
+
+**YouTube and Discord can run at the same time through one Android VPN.** Other apps continue to use the normal Internet connection.
 
 ## Interface
 
 | Quick setup | Connection check |
 | :--: | :--: |
 | ![osh. quick setup](assets/screenshots/setup.png) | ![osh. connection check](assets/screenshots/check.png) |
-| **Settings** | **Shared Smart Access** |
-| ![osh. settings](assets/screenshots/settings.png) | ![osh. shared Smart Access](assets/screenshots/services.png) |
+| **Settings** | **YouTube + Discord** |
+| ![osh. settings](assets/screenshots/settings.png) | ![osh. Smart Access](assets/screenshots/services.png) |
 
-## Highlights
+## What osh. does
 
-- Local Telegram Bridge.
-- Smart Access for YouTube and Discord.
-- YouTube and Discord can share a single Android VPN.
-- Automatic and manual connection modes.
-- Recovery after Wi-Fi/LTE changes and temporary network failures.
-- Built-in connection diagnostics.
-- Optional autostart and Android Quick Settings tile.
-- Updates from the official GitHub Release channel with APK signature verification.
-- Local settings and diagnostics with no built-in advertising analytics.
-
-See [FEATURES_EN.md](docs/FEATURES_EN.md) for details.
+- **Automatic mode**: selects a working route for you.
+- **Telegram Bridge**: local proxy without manually copying hosts and ports.
+- **Smart Access**: dedicated routing for YouTube and Discord.
+- **Shared VPN**: YouTube and Discord can use one Android VPNService simultaneously.
+- **Recovery**: reconnects after temporary failures and Wi-Fi/LTE changes.
+- **Diagnostics**: built-in connection check.
+- **Autostart**: restores operation after device reboot.
+- **Quick access**: Android Quick Settings tile.
+- **Updates**: new builds are installed through the standard Android installer.
 
 ## Installation
 
 1. Open [Releases](https://github.com/grudametalla/osh./releases).
-2. On a typical ARM64 Android phone, download `osh-<version>-arm64-v8a.apk`.
-3. Use `osh-<version>-universal.apk` when a universal package is required.
-4. Install the APK and complete the quick setup.
-5. Follow [INSTALL_EN.md](docs/INSTALL_EN.md) to verify SHA-256 checksums and the signing certificate.
+2. On most Android phones, download **`osh-<version>-arm64-v8a.apk`**.
+3. Install the APK and complete the quick setup.
 
-Minimum supported version: **Android 8.0 (API 26)**.
+Minimum version: **Android 8.0**.
 
-## Release security
+> osh. is currently in public beta. Availability of individual services depends on the current network, carrier and access restrictions.
 
-Official APKs are published only in this repository's **Releases** section and are signed with the permanent osh. production certificate.
+## Documentation
 
-Certificate SHA-256 fingerprint:
-
-`a5327cd2a2c0c48e6805467ae22cc5db83a7fd54c84715d1cc9dc94c5f6c0c9c`
-
-Every release also includes checksums and release metadata. Verification steps are documented in [INSTALL_EN.md](docs/INSTALL_EN.md).
+**[Features](docs/FEATURES_EN.md)** · **[Install & update](docs/INSTALL_EN.md)** · **[Privacy](docs/PRIVACY_EN.md)** · **[Security](docs/SECURITY_EN.md)**
 
 ## Support
 
-For regular bugs and installation questions, use [Issues](https://github.com/grudametalla/osh./issues). Include the osh. version, Android version, network type and a short description.
+If something does not work, open an [Issue](https://github.com/grudametalla/osh./issues) and include the osh. version, Android version and network type.
 
-Do not post tokens, passwords, message contents or private diagnostic reports. Report security issues using [SECURITY_EN.md](docs/SECURITY_EN.md).
+Security reports and suspicious APK guidance are documented in [SECURITY_EN.md](docs/SECURITY_EN.md).
 
-## Licensing
+---
 
-osh. is proprietary software. This repository is the official distribution point for APKs, user documentation and release verification information.
-
-Third-party notices: [THIRD_PARTY_NOTICES_EN.md](docs/THIRD_PARTY_NOTICES_EN.md).
+<div align="center">
+<sub>Official osh. distribution repository. Proprietary application source code is not published here.</sub>
+</div>

@@ -1,81 +1,80 @@
-<h1 align="center">osh.</h1>
+<div align="center">
 
-<p align="center"><strong>Telegram, YouTube и Discord без ручной возни с маршрутами и прокси.</strong></p>
+# osh.
 
-<p align="center">
-  <strong>Русский</strong> · <a href="README_EN.md">English</a>
-</p>
+### Telegram, YouTube и Discord на Android без ручной настройки маршрутов.
 
-<p align="center">
-  <a href="https://github.com/grudametalla/osh./releases"><strong>Скачать</strong></a> ·
-  <a href="docs/FEATURES.md">Возможности</a> ·
-  <a href="docs/INSTALL.md">Установка</a> ·
-  <a href="SECURITY.md">Безопасность</a> ·
-  <a href="docs/PRIVACY.md">Конфиденциальность</a>
-</p>
+<img alt="Android 8+" src="https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
+<img alt="Public Beta" src="https://img.shields.io/badge/status-public%20beta-bdf58c?style=flat-square">
 
-> **Public Beta.** osh. находится в открытом бета-тестировании. Доступность сервисов зависит от версии Android, оператора, сети и действующих ограничений доступа.
+<br><br>
 
-## Что такое osh.
+<a href="https://github.com/grudametalla/osh./releases"><strong>Скачать osh.</strong></a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="README_EN.md">English</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="docs/INSTALL.md">Установка</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="docs/FEATURES.md">Возможности</a>
 
-osh. помогает поддерживать доступ к Telegram, YouTube и Discord на Android.
+</div>
 
-- **Telegram** работает через локальный мост, который приложение поднимает на устройстве.
-- **YouTube и Discord** используют Smart Access: один Android VPN для выбранных приложений с автоматическим подбором рабочего маршрута.
-- **Остальной трафик** не отправляется через osh. и продолжает идти через обычное подключение.
+---
 
-osh. не является VPN-сервисом анонимизации и не обещает доступность сторонних сервисов в любой сети.
+## Один переключатель вместо ручной настройки
 
-## Интерфейс
+osh. помогает поддерживать доступ к нужным сервисам и сам занимается маршрутом подключения.
+
+| Telegram | YouTube | Discord |
+| :-- | :-- | :-- |
+| Локальный Telegram Bridge | Smart Access | Smart Access |
+| Работает отдельно от Android VPN | Автоматический подбор маршрута | Автоматический подбор маршрута |
+| Быстрая настройка внутри приложения | Может работать вместе с Discord | Может работать вместе с YouTube |
+
+**YouTube и Discord могут работать одновременно через один Android VPN.** Остальные приложения продолжают использовать обычное интернет-соединение.
+
+## Как выглядит
 
 | Быстрая настройка | Проверка соединения |
 | :--: | :--: |
 | ![Быстрая настройка osh.](assets/screenshots/setup.png) | ![Проверка соединения osh.](assets/screenshots/check.png) |
-| **Настройки** | **Smart Access** |
-| ![Настройки osh.](assets/screenshots/settings.png) | ![Совместный Smart Access osh.](assets/screenshots/services.png) |
+| **Настройки** | **YouTube + Discord** |
+| ![Настройки osh.](assets/screenshots/settings.png) | ![Smart Access osh.](assets/screenshots/services.png) |
 
-## Основные возможности
+## Что умеет osh.
 
-- Telegram Bridge с локальным прокси.
-- Smart Access для YouTube и Discord.
-- Одновременная работа YouTube и Discord через один Android VPN.
-- Автоматический и ручной режимы подключения.
-- Восстановление после смены Wi-Fi/LTE и временных сетевых сбоев.
-- Встроенная диагностика соединения.
-- Автозапуск и плитка быстрых настроек Android.
-- Обновления из официального GitHub Release с проверкой подписи APK.
-- Локальное хранение настроек и диагностических данных без встроенной рекламной аналитики.
-
-Подробное описание: [FEATURES.md](docs/FEATURES.md).
+- **Автоматический режим**: приложение само подбирает рабочий маршрут.
+- **Telegram Bridge**: локальный прокси без ручного ввода адресов и портов.
+- **Smart Access**: отдельная маршрутизация для YouTube и Discord.
+- **Общий VPN**: YouTube и Discord работают одновременно через один VPNService Android.
+- **Восстановление связи**: повторное подключение после временных сбоев и смены Wi-Fi/LTE.
+- **Диагностика**: отдельный экран проверки соединения.
+- **Автозапуск**: восстановление после перезагрузки телефона.
+- **Быстрый доступ**: плитка в шторке Android.
+- **Обновления**: установка новых версий через стандартный установщик Android.
 
 ## Установка
 
 1. Откройте [Releases](https://github.com/grudametalla/osh./releases).
-2. Для обычного Android-телефона ARM64 скачайте `osh-<version>-arm64-v8a.apk`.
-3. Универсальная сборка доступна как `osh-<version>-universal.apk`.
-4. Установите APK и пройдите быструю настройку.
-5. При желании проверьте SHA-256 и сертификат подписи по [INSTALL.md](docs/INSTALL.md).
+2. Для большинства Android-телефонов скачайте **`osh-<version>-arm64-v8a.apk`**.
+3. Установите APK и пройдите быструю настройку.
 
-Минимальная поддерживаемая версия: **Android 8.0 (API 26)**.
+Минимальная версия: **Android 8.0**.
 
-## Безопасность релизов
+> osh. сейчас находится в публичной beta. Работа отдельных сервисов зависит от конкретной сети, оператора и действующих ограничений доступа.
 
-Официальные APK публикуются только в разделе **Releases** этого репозитория и подписываются постоянным production-сертификатом osh.
+## Документация
 
-SHA-256 отпечаток сертификата:
-
-`a5327cd2a2c0c48e6805467ae22cc5db83a7fd54c84715d1cc9dc94c5f6c0c9c`
-
-Каждый релиз содержит контрольные суммы и метаданные. Пошаговая проверка описана в [INSTALL.md](docs/INSTALL.md).
+**[Все возможности](docs/FEATURES.md)** · **[Установка и обновление](docs/INSTALL.md)** · **[Конфиденциальность](docs/PRIVACY.md)** · **[Безопасность](SECURITY.md)**
 
 ## Поддержка
 
-Для обычных ошибок и вопросов используйте [Issues](https://github.com/grudametalla/osh./issues). Укажите версию osh., версию Android, тип сети и краткое описание проблемы.
+Если что-то не работает, создайте [Issue](https://github.com/grudametalla/osh./issues) и укажите версию osh., Android и тип сети.
 
-Не публикуйте токены, пароли, содержимое переписок или приватные диагностические отчёты. Уязвимости сообщайте по инструкции из [SECURITY.md](SECURITY.md).
+Уязвимости и подозрительные APK описаны отдельно в [SECURITY.md](SECURITY.md).
 
-## Лицензирование
+---
 
-osh. распространяется как закрытое приложение. Этот репозиторий предназначен для официальных APK, пользовательской документации и информации, необходимой для проверки релизов.
-
-Сведения о сторонних компонентах: [THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md).
+<div align="center">
+<sub>Официальный репозиторий распространения osh. Исходный код приложения не публикуется.</sub>
+</div>
