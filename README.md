@@ -5,7 +5,7 @@
 ### Telegram, YouTube и Discord на Android без ручной настройки маршрутов.
 
 <img alt="Android 8+" src="https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
-<img alt="Public Beta" src="https://img.shields.io/badge/status-public%20beta-bdf58c?style=flat-square">
+<img alt="Stable" src="https://img.shields.io/badge/status-stable-bdf58c?style=flat-square">
 
 <br><br>
 
@@ -61,7 +61,7 @@ osh. помогает поддерживать доступ к нужным се
 
 Минимальная версия: **Android 8.0**.
 
-> osh. сейчас находится в публичной beta. Работа отдельных сервисов зависит от конкретной сети, оператора и действующих ограничений доступа.
+> Доступность отдельных сервисов зависит от конкретной сети, оператора и действующих ограничений доступа.
 
 ## Документация
 

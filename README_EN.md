@@ -5,7 +5,7 @@
 ### Telegram, YouTube and Discord on Android without babysitting routes and proxy settings.
 
 <img alt="Android 8+" src="https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
-<img alt="Public Beta" src="https://img.shields.io/badge/status-public%20beta-bdf58c?style=flat-square">
+<img alt="Stable" src="https://img.shields.io/badge/status-stable-bdf58c?style=flat-square">
 
 <br><br>
 
@@ -61,7 +61,7 @@ osh. keeps the selected services reachable and handles connection routing automa
 
 Minimum version: **Android 8.0**.
 
-> osh. is currently in public beta. Availability of individual services depends on the current network, carrier and access restrictions.
+> Availability of individual services depends on the current network, carrier and access restrictions.
 
 ## Documentation
 
